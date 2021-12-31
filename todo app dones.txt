@@ -1,0 +1,18 @@
+C:\WINDOWS\system32>dotnet --list-sdks
+5.0.401 [C:\Program Files\dotnet\sdk]
+
+C:\WINDOWS\system32>dotnet --list-runtimes
+Microsoft.AspNetCore.App 5.0.10 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 5.0.10 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+Microsoft.WindowsDesktop.App 5.0.10 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+1- dotnet cli -> dotnet new sln
+2- dotnet cli -> dotnet new webapi -o API
+3- dotnet cli -> dotnet sln add .\API\
+4- Couchbase server community installed v7.0.2
+5- Created new cluster. Creds -> Administrator:qweasd1
+6- Created a bucket. -> TodoAppBucket
+7- Added Coucbase.Extensions.DependencyInjection @v3.2.5 to API project.
+8- Added Couchbase appsettings.json and Startup.cs and lifetime for close.
+9- Added Microsoft.IdentityModel 7.0.0.
+10- Added System.IdentityModel.Tokens.Jwt 6.15.0
